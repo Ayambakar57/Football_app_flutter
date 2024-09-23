@@ -39,8 +39,8 @@ class HomePage extends StatelessWidget {
               label: "Home",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.history),
-              label: "History",
+              icon: Icon(Icons.star_border),
+              label: "Top Scores",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),

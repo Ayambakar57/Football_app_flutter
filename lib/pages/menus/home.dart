@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(60.0), // Adjust the height as necessary
+        preferredSize: const Size.fromHeight(60.0), 
         child: AppBar(
   flexibleSpace: Container(
     decoration: const BoxDecoration(
@@ -45,13 +45,12 @@ class Home extends StatelessWidget {
   height: 150,
   child: Stack(
     children: [
-      // Background Image
       Positioned.fill(
        child: ClipRRect(
-          borderRadius: BorderRadius.circular(12.0), // Rounding the image
+          borderRadius: BorderRadius.circular(12.0), 
           child: Image.network(
             "https://m.media-amazon.com/images/M/MV5BZGQ4OTAxZTEtZjVjZS00MTJkLThiMTItNjc1ZTczN2UxYjEzXkEyXkFqcGc@._V1_.jpg",
-            fit: BoxFit.cover, // Cover the entire card area
+            fit: BoxFit.cover, 
           ),
         ),
       ),
@@ -69,15 +68,15 @@ class Home extends StatelessWidget {
         child: Container(
           width: double.infinity,
           decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 54, 52, 52), // Keeps the inner container's background
+            color: const Color.fromARGB(255, 54, 52, 52), 
             border: Border.all(
               color: const Color.fromARGB(255, 54, 52, 52),
               width: 2.0,
             ),
-            borderRadius: BorderRadius.circular(12), // Optional: add rounded corners
+            borderRadius: BorderRadius.circular(12), 
           ),
           child: ListView(
-            padding: EdgeInsets.zero, // Remove padding
+            padding: EdgeInsets.zero, 
             children: [
               FootballScoreCard(
                 leagueLogoUrl: "lib/assets/ucl.png",

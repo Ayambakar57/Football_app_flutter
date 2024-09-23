@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class Profile extends StatelessWidget {
@@ -7,8 +5,13 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profile'),
+        title: Text('Profile', style: TextStyle(color: Colors.white),),
+         iconTheme: IconThemeData(
+      color: Colors.white, 
+         ),
+        backgroundColor: Colors.black, // Dark AppBar
       ),
+      backgroundColor: Colors.black, // Dark Background
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -27,6 +30,7 @@ class Profile extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
+                color: Colors.white, // White text
               ),
             ),
             SizedBox(height: 10),
@@ -36,31 +40,38 @@ class Profile extends StatelessWidget {
               'muhammadrafifazka27@gmail.com',
               style: TextStyle(
                 fontSize: 16,
-                color: Colors.grey[600],
+                color: Colors.grey[400], // Light grey for text
               ),
             ),
             SizedBox(height: 20),
 
             // Favorite Teams or Sports
             Card(
+              color: Colors.grey[850], // Dark card color
               margin: EdgeInsets.symmetric(vertical: 10),
               child: ListTile(
-                leading: Icon(Icons.star),
-                title: Text('Favorite Team: Manchester United'),
+                leading: Icon(Icons.star, color: Colors.white), // White icon
+                title: Text(
+                  'Favorite Team: Manchester United',
+                  style: TextStyle(color: Colors.white), // White text
+                ),
               ),
             ),
             Card(
+              color: Colors.grey[850], // Dark card color
               margin: EdgeInsets.symmetric(vertical: 10),
               child: ListTile(
-                leading: Icon(Icons.sports_soccer),
-                title: Text('Favorite Sport: Football'),
+                leading: Icon(Icons.sports_soccer, color: Colors.white), // White icon
+                title: Text(
+                  'Favorite Sport: Football',
+                  style: TextStyle(color: Colors.white), // White text
+                ),
               ),
             ),
 
             SizedBox(height: 20),
 
-            // Edit Profile Button
-          
+            // Edit Profile Button (optional, add here if needed)
           ],
         ),
       ),

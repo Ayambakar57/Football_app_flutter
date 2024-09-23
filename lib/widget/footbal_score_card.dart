@@ -41,11 +41,11 @@ class FootballScoreCard extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15.0),
         ),
-        elevation: 0, // Set to 0 because we already have shadow from the container
-        color: Colors.transparent, // Make the card background transparent to see the gradient
+        elevation: 0,
+        color: Colors.transparent, 
         child: Column(
           children: [
-            // Top Row (League logo and match time)
+          
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
