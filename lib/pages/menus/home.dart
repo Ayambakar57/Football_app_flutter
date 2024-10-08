@@ -8,27 +8,11 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(60.0), 
-        child: AppBar(
-  flexibleSpace: Container(
-    decoration: const BoxDecoration(
-      color: Colors.black, 
-    ),
-  ),
-          title: const Text(
-            "Champions League Match",
-            style: TextStyle(color: Colors.white),
-          ),
-           iconTheme: IconThemeData(
-      color: Colors.white, 
-         ),
-        ),
-      ),
      body: Container(
   color: Colors.black, 
   child: Column(
     children: [
+      SizedBox(height: 20,),
       const Padding(
         padding: EdgeInsets.all(16.0),
         child: Text(
