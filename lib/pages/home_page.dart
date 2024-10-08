@@ -10,9 +10,10 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final BottomNavCtr bottomNavCtr = Get.put(BottomNavCtr());
+    final BottomNavCtr bottomNavCtr = Get.find();
 
     final List<Widget> menus = [Home(), Ranking(), Profile()];
+
 
     return Obx(() {
       return Scaffold(

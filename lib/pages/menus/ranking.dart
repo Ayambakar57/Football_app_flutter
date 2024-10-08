@@ -4,7 +4,7 @@ import 'package:my_bottom_navbar/widget/top_scorer.dart';
 class Ranking extends StatelessWidget {
   const Ranking({super.key});
 
-  // Top scorers data
+
   final List<Map<String, dynamic>> topScorers = const [
     {
       "name": "Player 1",

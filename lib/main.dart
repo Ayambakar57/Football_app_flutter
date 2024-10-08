@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_bottom_navbar/bindings/app_bindings.dart';
 import 'package:my_bottom_navbar/pages/home_page.dart';
 import 'package:my_bottom_navbar/pages/login_page.dart';
 
@@ -14,12 +15,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      initialRoute: '/loginpage', 
+      initialRoute: '/',
       getPages: [
-      
-        GetPage(name: '/loginpage', page: () => LoginPage()),
-        GetPage(name: '/homepage', page: () => HomePage()), 
+        GetPage(name: '/', page: () => LoginPage()), 
+        GetPage(
+          name: '/homepage', 
+          page: () => HomePage(), 
+          bindings: [AppBindings()],
+        ), 
       ],
     );
   }
